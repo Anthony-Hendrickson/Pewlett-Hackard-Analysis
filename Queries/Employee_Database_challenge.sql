@@ -4,7 +4,7 @@ INTO retirement_titles
 FROM employees AS e
 LEFT JOIN Titles AS ti
 ON e.emp_no = ti.emp_no
-WHERE e.birth_date BETWEEN '1952-01-01' AND '1955-12-31'
+WHERE e.birth_date BETWEEN '1952-01-01' AND '1955-12-31' AND ti.to_date = '9999-01-01'
 ORDER BY e.emp_no;
 
 
